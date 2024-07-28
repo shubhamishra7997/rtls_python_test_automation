@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package robot_position;
+
+message Data3d {
+  float x = 1;
+  float y = 2;
+  float z = 3;
+}
+
+message Position {
+  uint64 sensorID = 1;
+  uint64 timestampUsec = 2;
+  Data3d position = 3;
+}
